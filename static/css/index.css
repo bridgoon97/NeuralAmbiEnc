@@ -133,5 +133,36 @@ body {
   font-size: smaller;
 }
 
+.custom-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
 
+.custom-table th, .custom-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.custom-table th {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: bold;
+}
+
+.custom-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.custom-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.custom-table .caption {
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: #666;
+  text-align: center; /* Center the captions */
+}
 
