@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="Neural Ambisonics Encoding Method"/>
-  <meta property="og:title" content="Neural Ambisonics Encoding For Multi-Speaker Scenarios Using A Circular Microphone Array"/>
-  <meta property="og:description" content="Neural Ambisonics Encoding Method"/>
+  <meta name="description" content="A Neural Ambisonic Encoding Method"/>
+  <meta property="og:title" content="Neural Ambisonic Encoding For Multi-Speaker Scenarios Using A Circular Microphone Array"/>
+  <meta property="og:description" content="A Neural Ambisonic Encoding Method"/>
   <meta property="og:url" content="https://bridgoon97.github.io/NeuralAmbisonicsEncoding/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/teleconferencing.png" />
@@ -14,17 +14,17 @@
   <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="Neural Ambisonics Encoding For Multi-Speaker Scenarios Using A Circular Microphone Array">
-  <meta name="twitter:description" content="Neural Ambisonics Encoding Method">
+  <meta name="twitter:title" content="Neural Ambisonic Encoding For Multi-Speaker Scenarios Using A Circular Microphone Array">
+  <meta name="twitter:description" content="A Neural Ambisonic Encoding Method">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
   <meta name="twitter:image" content="static/images/teleconferencing.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="Neural Ambisonics Encoding">
+  <meta name="keywords" content="Neural Ambisonic Encoding">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Neural Ambisonics Encoding For Multi-Speaker Scenarios Using A Circular Microphone Array</title>
+  <title>Neural Ambisonic Encoding For Multi-Speaker Scenarios Using A Circular Microphone Array</title>
   <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,7 +52,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Neural Ambisonics Encoding For Multi-Speaker Scenarios Using A Circular Microphone Array</h1>
+            <h1 class="title is-1 publication-title">Neural Ambisonic Encoding For Multi-Speaker Scenarios Using A Circular Microphone Array</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -132,7 +132,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            This work presents a deep neural network (DNN)-based method for Ambisonics encoding in multi-speaker environments using a circular microphone array. Traditional Ambisonics encoding methods impose strict requirements on microphone array layouts, and while existing DNN-based approaches offer greater flexibility, they often struggle to generalize to non-ideal arrays. The proposed method employs a two-stage architecture that mimics the sound field decomposition and synthesis process. A loss function based on spatial power maps is introduced to regularize Ambisonics channel correlations, along with a channel permutation technique to address the ambiguity in encoding vertical information with a horizontal array. Evaluation on simulated speech and noise datasets against existing encoding methods shows that the proposed method achieves comparable timbral audio quality, significantly improved spatial audio quality, and enhanced source localization accuracy, making it particularly suitable for speech-focused applications such as teleconferencing.
+            Spatial audio formats like Ambisonics are playback device layout-agnostic and are well-suited for encoding sound fields in applications such as teleconferencing and virtual reality. Conventional Ambisonics encoding methods rely on uniformly distributed microphones over a sphere for efficient sound field capture, which limits their flexibility for practical scenarios that involve the use of non-spherical microphone arrays. To address this limitation, we propose a deep learning (DL)-based approach for encoding sound fields in multi-speaker teleconferencing environments using a planar circular microphone array. This paper introduces a two-stage DL network that transforms circular microphone array signals into Second Order Ambisonics (SOA) signals. In addition, we also introduce: (i) a novel loss function based on spatial power maps to regularize inter-channel correlations of the Ambisonic signals, and (ii) a channel permutation technique to resolve the ambiguity of encoding vertical information using a horizontal circular array. We evaluate the performance of our proposed approach on simulated speech and noise datasets, comparing it with existing signal processing (SP) and DL-based methods. The results demonstrate that our approach consistently delivers significantly improved spatial and timbral quality, preserving spatial cues more effectively over other systems.
           </p>
         </div>
       </div>
@@ -148,10 +148,10 @@
     <div class="container">
       <h2 class="title is-3">Network Architecture</h2>
         <p>
-          The proposed neural network architecture consists of two stages: In the first stage, the complex ratio filters (CRFs) are estimated to generate <i>L</i> virtual loudspeaker signals, conceptually similar to the plane wave decomposition of the captured sound field; in the second stage, another set of CRFs are estimated to spatially transform the virtual loudspeaker signals to the Ambisonics domain, similar to the sound field synthesis process. 
+          The proposed neural network architecture consists of two stages: In the first stage, the complex ratio filters (CRFs) are estimated to generate <i>L</i> virtual loudspeaker signals, conceptually similar to the plane wave decomposition of the captured sound field; in the second stage, another set of CRFs are estimated to spatially transform the virtual loudspeaker signals to the Ambisonics domain, similar to the Ambisonics synthesis process. 
         </p><br>
         <figure class="image">
-          <img src="static/images/architecture_v2.jpg" alt="Network Architecture" style="width:70%; margin: 0 auto;">
+          <img src="static/images/architecture_v3.jpg" alt="Network Architecture" style="width:70%; margin: 0 auto;">
         </figure>
         <br>
       <h2 class="title is-3">Binaural Audio Demos with Spatial Power Map Visualization </h2>
